@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+
+        <header>
+            <img class='logo' src="media/bluebird лого.PNG" alt="Albina Alieva Interior Design">
+            <!-- <nav class="nav">
+                <a href="https://www.albinaalieva.com/" class="nav__link">Website</a>
+                <a href="https://www.houzz.com/pro/albinadesign/" class="nav__link">Feedbacks</a>
+                <a href="https://www.albinaalieva.com/barrinhouse" class="nav__link">Projects</a>
+                <a href="https://www.albinaalieva.com/degrees" class="nav__link">Degrees</a>
+            </nav> -->
+            <div class="social-links">
+                <a href="https://t.me/albinadesign" target="_blank" class="social-link"><img src="media/5340247_chat_media_network_social_telegram_icon.svg" alt="Telegram" class="social-img"></a>
+                <a href="https://www.instagram.com/albinadesign/" target="_blank" class="social-link"><img src="media/5335781_camera_instagram_social media_instagram logo_icon.svg" alt="Instagram" class="social-img"></a>
+             </div>
+        </header>
+
+        <main>
+            <div class="grid">
+                <div class="titles">
+                    <h1 class="title">Albina Alieva</h1>
+                    <p class="subtitle">
+                        Interior designer
+                    </p>
+                </div>
+                <div class="images">
+                    <img src="media/портрет-3.jpg" alt="Albina Alieva" class="primary-img">
+                    <div class="secondary-images">
+                        <img src="media/Screenshot at Oct 12 09-43-42.png" alt="My projects" class="secondary-image">
+                        <img src="media/Screenshot at Oct 12 09-50-25.png" alt="My projects" class="secondary-image">
+                    </div>
+                </div>
+                <p class="description">
+                    Albina Alieva is an interior designer
+                     with more than 10 years of experience
+                    specializing  in creating comfortable spaces for families with kids,
+                    from detailed projecting to comprehensive support during all stages of implementation
+                    Bachelor of Arts with Honours Interior Design, First Class, Staffordshire University, UK.
+                </p>
+            </div>
+
+            <button class="collapsible">Degrees</button>
+            <div class="content">
+                <div class="timeline">
+                   
+                    <div class="timeline-container left">
+                      <div class="timeline-content">
+                        <h2>2018</h2>
+                        <p>Bachelor of Arts with Honours First Class, Interior Design, Staffordshire University, UK</p>
+                      </div>
+                    </div>
+                    <div class="timeline-container right">
+                      <div class="timeline-content">
+                        <h2>2015</h2>
+                        <p>Foundation Degree of Arts Distinction, Interior Design, Staffordshire University, UK</p>
+                      </div>
+                    </div>
+                    <div class="timeline-container left">
+                      <div class="timeline-content">
+                        <h2>2012</h2>
+                        <p>NOCN Level 3 Diploma in Interior Design Skills(QCF), National Design Academy, UK</p>
+                      </div>
+                    </div>
+                    <div class="timeline-container right">
+                      <div class="timeline-content">
+                        <h2>2000</h2>
+                        <p>World Economy, Daghestan State University</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <button class="collapsible">Projects</button>
+            <div class="content">
+                <div class="row">
+                    <div class="column">
+                      <img src="media/1.jpg">
+                      <img src="media/15.jpg">
+                      <img src="media/3.jpg">
+                      <img src="media/4.jpg">
+                      
+                    </div>
+                    <div class="column">
+                      <img src="media/5.jpg">
+                      <img src="media/6.jpg">
+                      <img src="media/13.jpg">
+                      <img src="media/7.jpg">
+                      <img src="media/12.jpg">
+                    </div>
+                    <div class="column">
+                      <img src="media/8.jpg">
+                      <img src="media/9.jpg">
+                      <img src="media/10.jpg">
+                      <img src="media/11.jpg">
+                    </div>
+                  </div>
+        </main>
+
+        <footer>
+            <div class="social-links">
+                <a href="https://t.me/albinadesign" target="_blank" class="social-link"><img src="media/5340247_chat_media_network_social_telegram_icon.svg" alt="Telegram" class="social-img"></a>
+                <a href="https://www.instagram.com/albinadesign/" target="_blank" class="social-link"><img src="media/5335781_camera_instagram_social media_instagram logo_icon.svg" alt="Instagram" class="social-img"></a>
+            </div>
+        </footer>
+    
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+            content.style.maxHeight = null;
+            } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            } 
+        });
+        }
+    </script>
+    
+</body>
+</html>
